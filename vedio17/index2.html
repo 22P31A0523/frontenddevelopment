@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*element selector*/
+        div{
+            background-color: rgb(245, 231, 39);
+        }
+        /*class selector*/
+        .red{
+            background-color: red;
+        }
+        /*id selector*/
+        #blue{
+            background-color: blue;
+        }
+        /*child selector*/
+        div>p{
+            color: blue;
+            background-color: brown;
+        }
+        /*descendant selector*/
+        div p{
+            background-color: aquamarine;
+        }
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        /*pseudo selectors*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am a first </p>
+        <p>I am a second</p>
+    </main>
+    <div>
+        I am a div
+    </div>
+    <div class="red">I am another div</div>
+    <div id="blue">
+        I am another div
+        <p>I am a para inside div</p>
+    </div>
+    <a href="http://www.google.com">google</a>
+</body>
+</html>
