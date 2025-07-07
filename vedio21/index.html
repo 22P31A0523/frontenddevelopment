@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* the specificity of this selector is 1
+        element selector*/
+        h1 {
+            color: aqua;
+        }
+
+        /* the specificity of this selector is 10.
+        class selector*/
+        .cyellow {
+            color: yellow;
+        }
+
+        /* the specificity of this selector is 10.
+        class selector*/
+        .cred {
+            color: red;
+        }
+
+        /* the specificity of this selector is 10.
+        class selector*/
+        .cpurple {
+            color: purple
+        }
+
+        /* the specificity of this selector is 10.
+        attribute selector*/
+        [data-x=a]{
+            background-color: red;
+        }
+        /* the specificity of this selector is 100.
+        id selector*/
+        #blue {
+            color: blue;
+        }
+
+        /* the specificity of this selector is 0.
+        universal selector*/
+        * {
+            color: deeppink;
+        }
+        /*these are called complex selectors*/
+        /* the specificty of this selector is 1+10=11*/
+        h1.cyellow{
+            color: yellow;
+        }
+        /* the specificty of this color is 1+10+10+10+10=41*/
+        a.harryclass.rohan-class[href]:hover{
+            color: indigo;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!--style=color blue it is called as the inline style.and it is a more specificity compare to other selectors-->
+        <h1 style="color: blue;" id="blue" class="cyellow cred cpurple" data-x="a">css specificity</h1>
+    </div>
+</body>
+
+</html>
