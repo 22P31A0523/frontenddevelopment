@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            /*shadow is inside of the box because we use inset
+            box-shadow:inset 5px 15px 5px rgb(101, 219, 101);*/
+            box-shadow: 5px 15px 5px green;
+        }
+        .text{
+            text-shadow: 3px 3px 3px blueviolet;
+            /*boprder is inside the outline*/
+            border: 2px solid red;
+            /*outline is outside of the box*/
+            outline: 2px solid black;
+            outline-offset: 13px;
+            border-radius: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am a box</div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti mollitia numquam! Fugiat ratione dolores assumenda officia. Labore dignissimos velit dolore accusantium ad?</div>
+
+</body>
+</html>
